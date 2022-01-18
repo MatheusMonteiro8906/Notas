@@ -1,0 +1,121 @@
+body {
+    background: radial-gradient(ellipse at bottom, #151a20 0%, rgb(35, 38, 59) 100%);
+    overflow: hidden;
+}
+.container {
+    color: #fafafa;
+}
+.form-control {
+    background-color: rgba(34, 34, 34, 0.801);
+    color: rgb(255, 246, 246);
+    border:  0px solid;
+    border-bottom:  1px solid rgba(10, 180, 180, 1);
+}
+.form-control:focus, .adicionar:focus {
+    outline: 0 none; 
+    box-shadow: none;
+}
+
+/*adicionar botão*/
+.adicionar {
+ border: 2px solid #17c342;
+ position: relative;
+ overflow: hidden;
+ background-color: transparent;
+ text-align: center;
+ color: #ddd;
+ transition: .3s;
+ z-index: 1;
+ font-family: inherit;
+ color: #17c342;
+}
+
+.adicionar::before {
+ content: '';
+ width: 0;
+ height: 300%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) rotate(45deg);
+ background: #17c342;
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+.adicionar:hover::before {
+    width: 105%;
+}
+.adicionar:hover {
+    color: rgb(17, 17, 17);
+}
+
+/*buscar botão*/
+.buscar {
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    color: #ddd;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+.buscar::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   .buscar:hover::before {
+       width: 105%;
+   }
+   .buscar:hover {
+       color: #111;
+   }
+    
+   /*limpar botão*/
+.limpar {
+    border: 2px solid rgb(255, 55, 55);
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    color: #ddd;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: rgb(255, 55, 55);
+}
+.limpar::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: radial-gradient(ellipse at bottom, #f8291a 0%, rgb(255, 55, 55));
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   .limpar:hover::before {
+       width: 105%;
+   }
+   .limpar:hover {
+       color: #111;
+   }
+   .limpar:focus {
+       box-shadow: none;
+       outline: none;
+   }

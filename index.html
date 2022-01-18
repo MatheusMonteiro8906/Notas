@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Notas</title>
+        <meta charset="utf-8">   
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">        
+    </head>
+    <body>        
+        <section>
+
+        	<div class="container">
+		      	<h2>Média dos alunos</h2>
+
+		      	<div id="form-adiciona"></div>
+		      	<div id="form-busca"></div>
+
+		      	
+
+				<table class="table js-tabela">
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Nota 1</th>
+							<th>Nota 2</th>
+							<th>Nota 3</th>
+							<th>Nota 4</th>
+							<th>Média</th>
+						</tr>
+					</thead>
+					<tbody id="listaAlunos">
+						<tr class="aluno" >
+							<td class="aluno-nome">Nilza</td>
+							<td class="aluno-n1">10</td>
+							<td class="aluno-n2">8.5</td>
+							<td class="aluno-n3">9</td>
+							<td class="aluno-n4">7.5</td>	
+							<td class="aluno-m"></td>
+						</tr>
+						
+
+						
+					</tbody>
+				</table>
+	        	
+        	</div>	
+        </section>
+
+        <script src="beluga2.js"></script>
+        <script src="js/View/View.js"></script>
+        <script src="js/Model/AlunoModel.js"></script>
+        <script src="js/Model/ListaAlunosModel.js"></script>
+        <script src="js/View/ListaAlunosView.js"></script>
+        <script src="js/View/FormAdicionarAlunoView.js"></script>
+        <script src="js/View/FormBuscarAlunoView.js"></script>
+        <script src="js/Controller/ListaAlunosController.js"></script>
+        <script src="js/Controller/FormAdicionarAlunoController.js"></script>
+        <script src="js/Controller/FormBuscarAlunoController.js"></script>
+        <script src="js/app.js"></script>
+        
+        
+    </body>
+</html>
